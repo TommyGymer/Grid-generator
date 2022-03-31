@@ -15,4 +15,4 @@ r, g, b = safe_int_input("Enter the grid r value: ") or 0, safe_int_input("Enter
 data[::gap, 0::] = [r,g,b]
 data[0::, ::gap] = [r,g,b]
 img = Image.fromarray(data, 'RGB')
-img.show()
+img.save(input("File name: "))
